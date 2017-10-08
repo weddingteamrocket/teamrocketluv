@@ -11,7 +11,7 @@ html {
 
 @media only screen and (max-width: 768px) {
 html {
-  font-size: 18px;
+  font-size: 20px;
   }
 }
 
@@ -57,6 +57,7 @@ p, a, span {
 
 a {
   letter-spacing: .1rem;
+  font-size: 1.1rem;
 }
 
 a:link {
@@ -157,22 +158,22 @@ nav {
 
 .pictures-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
 
 }
 
 .pictures img {
-  max-width: 50%;
-  height: auto;
+/*  min-width: 50%; */
+  width: 50%;
+/*  height: auto; */
 }
 
 
 @media only screen and (max-width: 1024px) {
   .pictures img {
-    max-width: 100%;
-
+    min-width: 100%;
   }
 }
 
@@ -230,31 +231,33 @@ nav {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 3rem;
 }
 
 .destination img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+
 /*  top: -10rem; */
 }
 
 .austin h3 {
   position: absolute;
   top: 16rem;
+
   z-index: 25;
-  text-align: center;
 }
 
 .austin p {
   position: absolute;
   z-index: 25;
   top: 26rem;
-  text-align: center;
-  max-width: 550px;
-  line-height: 2rem;
 
+  max-width: 450px;
+  line-height: 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
